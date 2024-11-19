@@ -3,7 +3,7 @@
         <ul class="flex space-x-3">
             <li>
                 <a href="">
-                    <Fa :icon="faBowlingBall"></Fa>
+                    <Fa :icon="faBowlingBall" size="4x"></Fa>
                     <span></span>
                 </a>
             </li>
