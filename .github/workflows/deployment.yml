@@ -8,20 +8,19 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: SSH and Run Commands
         uses: appleboy/ssh-action@v0.1.5
         with:
-          host: admin.pocketstore.io
-          username: "root"  
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }} 
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
-            cd /var/www/demo
+            cd ${{ secrets.SSH_FOLDER }}
             git pull
-            chmod u+x ./bin/extend.sh
-            ./bin/extend.sh
+            chmod u+x ./bin/extend.go
+            go run ./bin/extend.go
             cd storefront
             git pull
             bun install
