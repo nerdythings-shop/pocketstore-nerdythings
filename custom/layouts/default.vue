@@ -1,15 +1,15 @@
 <template>
-    <section class="bg-gray-300 min-h-screen">
+    <section style="background-image:url('/2024-beekeeper.jpeg')" class="min-h-screen bg-cover">
         <header>
             <Header />
         </header>
-        <main class="mx-auto max-w-5xl min-h-screen px-3 md:px-0">
+        <main class="mx-auto max-w-6xl min-h-screen px-3 py-3 rounded-lg bg-white">
             <Messages />
             <Breadcrumb />
             <CookieBanner />
             <slot />
         </main>
-        <footer class="">
+        <footer class="mt-3">
             <Footer />
         </footer>
     </section>
