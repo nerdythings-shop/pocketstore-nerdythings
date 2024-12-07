@@ -17,6 +17,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             cd ${{ secrets.SSH_FOLDER }}
             git pull
             chmod u+x ./bin/extend.go
@@ -25,4 +27,4 @@ jobs:
             git pull
             bun install
             bun run build
-            bun x pm2 restart ecosystem.config.cjs
+            pm2 restart ecosystem.config.cjs
