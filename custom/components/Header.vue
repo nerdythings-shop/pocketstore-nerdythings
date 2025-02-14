@@ -1,5 +1,5 @@
 <template>
-    <section class="header bg-white px-3 py-3 mx-auto max-w-6xl rounded-b-lg mb-3">
+    <section class="header px-3 py-3 mx-auto max-w-6xl rounded-lg">
         <section class="flex justify-between">
             <HeaderLogo />
             <HeaderDesktopNavigation />

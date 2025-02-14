@@ -1,8 +1,8 @@
 <template>
-    <div class="alert alert-error text-white">
+    <div class="alert alert-error text-white hidden">
         <Fa :icon="faCircleInfo" />
         <p class="text-sm">
-            This is a Demo Storefront from PocketStore.io and for the moment no real Store
+            Dies ist ein Demo Store von PocketStore.io, die Bestellungen werden nicht ausgeführt.
         </p>
         <Fa :icon="faCircleInfo" />
     </div>
