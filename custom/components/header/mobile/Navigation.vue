@@ -1,5 +1,5 @@
 <template>
-  <nav class="md:hidden flex items-center">
+  <nav class="md:hidden flex items-center space-x-3">
     <HeaderMobileCheckoutIcon />
     <HeaderMobileBars />
     <HeaderMobileContext />
