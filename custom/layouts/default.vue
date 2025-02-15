@@ -29,6 +29,14 @@ onMounted(() => {
     tracking.trackPage();
     store.clear();
 });
+
+useHead({
+    title: 'NerdyThings.shop',
+    meta: [{
+        name: 'description',
+        content: 'Dies ist der Online Shop von NerdyThings für Nerdzeugs.'
+    }]
+});
 </script>
 
 <style>
