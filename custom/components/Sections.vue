@@ -1,5 +1,5 @@
 <template>
-    <div v-if="route.path == '/de'" class="grid grid-cols-6 gap-3">
+    <div v-if="route.path == '/de'" class="grid-cols-6 gap-3 md:grid hidden">
         <div class="col-span-6 md:col-span-1">
             <div class="w-full bg-[#1e1f26] h-24 flex items-center justify-center rounded-lg">
                 <Fa :icon="faBowlingBall" color="white" size="2x"></Fa>

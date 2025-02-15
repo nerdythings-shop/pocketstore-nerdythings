@@ -3,7 +3,7 @@
         <header class="py-3">
             <Header />
         </header>
-        <main class="mx-auto max-w-6xl min-h-screen px-3 py-3 rounded-lg bg-white">
+        <main class="mx-3 lg:mx-auto max-w-6xl min-h-screen px-3 py-3 rounded-lg bg-white">
             <Messages />
             <Breadcrumb />
             <Sections />
