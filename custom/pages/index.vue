@@ -1,10 +1,6 @@
 <script setup>
-import { useBreadcrumbStore } from '~/stores/breadcrumb';
 import HeroWelcome from '~/components/hero/welcome';
 import HeroSales from '~/components/hero/sales';
-
-const storeBreadcrumb = useBreadcrumbStore();
-storeBreadcrumb.clear();
 </script>
 
 <template>
